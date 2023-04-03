@@ -173,7 +173,7 @@ class SkyInteractive():
         return   self.widget.kwargs.values()
     
 class CalibrationStars():
-    """Class use to select manually from the plot the desired calibration stars
+    """Class used to select manually from the plot the desired calibration stars
     Use: 
         Click one time on the left plot on the selected calibration star, this star will appear
         on the right plot, click one more time (now more accurately in the center of the star and 

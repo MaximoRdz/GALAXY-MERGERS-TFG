@@ -1,3 +1,7 @@
+# Author: Máximo Rodríguez Herrero
+# maximo.rodriguez@estudiante.uam.es
+# Universidad Autónoma de Madrid
+
 import numpy as np
 import pandas as pd
 
@@ -11,13 +15,26 @@ from astroplan.plots import plot_sky
 from astroplan import Observer
 
 class ObjectVisibility():
+    """Class used to provide insights about the object visibiliy, air-mass calculation, path
+    through the night sky etc
+    Use: 
+        Define the location of your observatory using EarthLocation from astropy.coordinates ex:
+        calar_alto = EarthLocation(lat = 37.2236*u.deg, lon = -2.5461*u.deg, height = 2168*u.m)
+        
+        Then, define the object, date, UTC offset of the observation, ex:
+        utcoffset = 1*u.hour  
+        NGC5395 = ObjectVisibility('2020-3-10', utcoffset, calar_alto, 'NGC5395')
+        
+        The class admits working with the name of the object (if present in Astropy's database or, 
+        if not, with right ascension, declination coordinates"""
     def __init__(self, civil_date, utc_off, earth_loc, ob_name, ar=0, dec=0):
         """
-        civil_date = 'yy-mm-dd'
-        utc_off = utc offset
-        earth_loc = astroy frame of the observation place
-        ob_name = 'name'
-        ar, dec = coordinates of the object
+        - inputs:
+            - civil_date = 'yy-mm-dd'
+            - utc_off = utc offset
+            - earth_loc = astroy frame of the observation place
+            - ob_name = 'name'
+            - ar, dec = coordinates of the object
         """
         # visualize astropy quantities
         quantity_support()
@@ -51,7 +68,9 @@ class ObjectVisibility():
             # total observation hours
             self.visible_hours = np.round(self.delta_midnight[self.index][-1] - self.delta_midnight[self.index][0], 2)
     def visible_index(self, alpha=30):
-        """index such that the sun is bellow horizon and the object above alpha degrees"""
+        """index such that the sun is bellow horizon and the object above alpha degrees
+        - inputs: 
+            - alpha: minimum observable altitude in degrees of the observatory"""
         index = (self.sun_ObsDay.alt < 0*u.deg)*(self.object_ObsDay.alt > alpha*u.deg)
         if sum(index) == 0:
             print('NO SE PUEDE OBSERVAR ESTE OBJETO ' + self.ob_name)
