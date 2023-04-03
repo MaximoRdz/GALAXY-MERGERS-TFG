@@ -26,22 +26,28 @@ The project is entirely contained in the notebook `Galaxy_Mergers.ipynb` althoug
 #### 3. Index slicing: Creating the mask for each type of image
 #### 4. Master Bias
 #### 5. Master Flats
-##### 5. 1 Median of every exposure and resize the frames if necessary
-#### Science Image Reduction
-##### Sky Substraction
-##### Final Reduction
-###### H ALPHA
-###### NGC 5395 R
-###### NGC 5395 V
-###### NGC 5395 B
-#### Flux Calibration
-##### Calibration Stars Selection
-##### CalibrationStars User Guide `CalibrationStars`
-##### Unit conversion: $mag/arcsec^2$
-#### Stellar Composition Analysis
-#### Color Image
-#### Structural Comparissons
+##### 5.1. Median of every exposure and resize the frames if necessary
+#### 6. Science Image Reduction
+##### 6.1. Sky Substraction `SkyInteractive`
+##### 6.2. Final Reduction
+###### 6.2.1. H ALPHA
+###### 6.2.2. NGC 5395 R
+###### 6.2.3. NGC 5395 V
+###### 6.2.4. NGC 5395 B
+#### 7. Flux Calibration
+##### 7.1. Calibration Stars Selection
+##### 7.2. CalibrationStars User Guide `CalibrationStars`
+##### 7.3. Unit conversion: $mag/arcsec^2$
+#### 8. Stellar Composition Analysis
+#### 9. Color Image
+#### 10. Structural Comparissons
 
+### Utils in `functions_maxi.py`
 
-
-
+- `my_plot` most used plt.imshow 
+- `my_plot_log` logarithmic plot
+- `cut_master_frames` reshape the frame to fit the science images shape
+- `sky_squares_median` compute the sky background median counts
+- `sky_histogram` represent the sky median
+- `class SkyInteractive` interactively select the area to use to compute the sky median counts
+- `class CalibrationStars` interactively select the calibration stars to get the location in the image and its radius
