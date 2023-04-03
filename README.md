@@ -15,6 +15,16 @@ This observational study of the NGC 5394 and 5395 merging system, conducted with
 
 Every insight about the object's visibility, air-mass, night-sky path followed etc. is provided by the class ObjectVisibility defined in `visibility.py` and implemented in the notebook `NGC5395_visibility.ipynb`
 
+## Utils in `functions_maxi.py`
+
+- `my_plot` most used plt.imshow 
+- `my_plot_log` logarithmic plot
+- `cut_master_frames` reshape the frame to fit the science images shape
+- `sky_squares_median` compute the sky background median counts
+- `sky_histogram` represent the sky median
+- `class SkyInteractive` interactively select the area to use to compute the sky median counts
+- `class CalibrationStars` interactively select the calibration stars to get the location in the image and its radius
+
 ## Data Reduction & Science Results
 
 The project is entirely contained in the notebook `Galaxy_Mergers.ipynb` although some of the functions are defined separately in the file `functions_maxi.py`.
@@ -42,12 +52,4 @@ The project is entirely contained in the notebook `Galaxy_Mergers.ipynb` althoug
 #### 9. Color Image
 #### 10. Structural Comparissons
 
-## Utils in `functions_maxi.py`
 
-- `my_plot` most used plt.imshow 
-- `my_plot_log` logarithmic plot
-- `cut_master_frames` reshape the frame to fit the science images shape
-- `sky_squares_median` compute the sky background median counts
-- `sky_histogram` represent the sky median
-- `class SkyInteractive` interactively select the area to use to compute the sky median counts
-- `class CalibrationStars` interactively select the calibration stars to get the location in the image and its radius
