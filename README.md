@@ -13,5 +13,5 @@ This observational study of the NGC 5394 and 5395 merging system, conducted with
 
 ### Object Visibility
 
-Every insight about the object's visibility, air-mass, night-sky path followed etc. is provided by the class ObjectVisibility defined in 'visibility.py/' and implemented in the notebook 'NGC5395_visibility.ipynb'
+Every insight about the object's visibility, air-mass, night-sky path followed etc. is provided by the class ObjectVisibility defined in `visibility.py/` and implemented in the notebook `NGC5395_visibility.ipynb`
 
