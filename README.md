@@ -19,7 +19,7 @@ Every insight about the object's visibility, air-mass, night-sky path followed e
 
 The project is entirely contained in the notebook `Galaxy_Mergers.ipynb` although some of the functions are defined separately in the file `functions_maxi.py`.
 
-### Table of contents `Galaxy_Mergers.ipynb` 
+## Table of contents `Galaxy_Mergers.ipynb` 
 
 #### 1. Data Load
 #### 2. Alingment to the CCD coordinates
@@ -42,7 +42,7 @@ The project is entirely contained in the notebook `Galaxy_Mergers.ipynb` althoug
 #### 9. Color Image
 #### 10. Structural Comparissons
 
-### Utils in `functions_maxi.py`
+## Utils in `functions_maxi.py`
 
 - `my_plot` most used plt.imshow 
 - `my_plot_log` logarithmic plot
