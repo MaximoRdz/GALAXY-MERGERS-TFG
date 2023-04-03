@@ -21,12 +21,12 @@ The project is entirely contained in the notebook `Galaxy_Mergers.ipynb` althoug
 
 ### Table of contents `Galaxy_Mergers.ipynb` 
 
-#### Data Load
-#### Alingment to the CCD coordinates
-#### Index slicing: Creating the mask for each type of image
-#### Master Bias
-#### Master Flats
-##### Median of every exposure and resize the frames if necessary
+#### 1. Data Load
+#### 2. Alingment to the CCD coordinates
+#### 3. Index slicing: Creating the mask for each type of image
+#### 4. Master Bias
+#### 5. Master Flats
+##### 5. 1 Median of every exposure and resize the frames if necessary
 #### Science Image Reduction
 ##### Sky Substraction
 ##### Final Reduction
