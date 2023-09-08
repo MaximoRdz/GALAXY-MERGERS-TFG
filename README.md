@@ -2,7 +2,8 @@
 
 <img src="IMAGES/NGC_RGB_1.png?raw=true" alt="drawing" width="350"/>
 
-Máximo Rodríguez Herrero 
+Máximo Rodríguez Herrero
+
 Universidad Autónoma de Madrid
 
 ## Overview
