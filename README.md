@@ -2,8 +2,7 @@
 
 [<img src="IMAGES/NGC_RGB_1.png?raw=true" alt="drawing" width="350"/>](https://github.com/MaximoRdz/GALAXY-MERGERS-TFG/blob/main/Galaxy_Mergers.ipynb)
 
-Máximo Rodríguez Herrero
-
+**Author**: Máximo Rodríguez Herrero\
 Universidad Autónoma de Madrid
 
 ## Overview
