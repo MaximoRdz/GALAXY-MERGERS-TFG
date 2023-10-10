@@ -11,6 +11,10 @@ The Cafos data is available at `\TFG_EXP_2022`
 ## Data Reduction & Science Results
 The project is entirely contained in the notebook [`Galaxy_Mergers.ipynb`](https://github.com/MaximoRdz/GALAXY-MERGERS-TFG/blob/main/Galaxy_Mergers.ipynb) although some of the functions are defined separately in the file `functions_maxi.py`.
 ## Usage
+```bash
+git clone https://github.com/MaximoRdz/GALAXY-MERGERS-TFG.git
+cd GALAXY-MERGERS-TFG
+```
 ### Object Visibility
 Every insight about the object's visibility, air-mass, night-sky path followed etc. is provided by the class ObjectVisibility defined in `visibility.py` and implemented in the notebook `NGC5395_visibility.ipynb`
 ## Utils in `functions_maxi.py`
